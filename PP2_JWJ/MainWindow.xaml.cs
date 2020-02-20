@@ -281,41 +281,41 @@ namespace PP2_JWJ
             if (PSI <= Convert.ToDouble(txtAge.Text))
             {
                 MessageBox.Show("Risk Class: 1" + "\n"
-                                + "Risk: Low" + "\n"
-                                + "PSI Level is: " + PSI + "\n"
-                                + "Admission Status: Out-patient");
+                + "Risk: LOW" + "\n"
+                + "PSI Level is: " + PSI + "\n"
+                + "Admission Status: Out-patient");
             }
 
             if (PSI > Convert.ToDouble(txtAge.Text) && PSI <= 70)
             {
                 MessageBox.Show("Risk Class: 2" + "\n"
-                                + "Risk: LOW" + "\n"
-                                + "PSI Level is: " + PSI + "\n"
-                                + "Admission Status: Out-patient");
+                + "Risk: LOW" + "\n"
+                + "PSI Level is: " + PSI + "\n"
+                + "Admission Status: Out-patient");
             }
 
             if (PSI > Convert.ToDouble(txtAge.Text) && PSI >= 71 && PSI <= 90)
             {
                 MessageBox.Show("Risk Class: 3" + "\n"
-                                + "Risk: LOW" + "\n"
-                                + "PSI Level is: " + PSI + "\n"
-                                + "Admission Status: Out-patient/Observation");
+                + "Risk: LOW/MODERATE" + "\n"
+                + "PSI Level is: " + PSI + "\n"
+                + "Admission Status: Out-patient/Observation");
             }
 
             if (PSI > Convert.ToDouble(txtAge.Text) && PSI >= 91 && PSI <= 130)
             {
                 MessageBox.Show("Risk Class: 4" + "\n"
-                                + "Risk: MODERATE" + "\n"
-                                + "PSI Level is: " + PSI + "\n"
-                                + "Admission Status: In-patient");
+                + "Risk: MODERATE" + "\n"
+                + "PSI Level is: " + PSI + "\n"
+                + "Admission Status: In-patient");
             }
 
             if (PSI > Convert.ToDouble(txtAge.Text) && PSI > 130)
             {
                 MessageBox.Show("Risk Class: 5" + "\n"
-                                + "Risk: HIGH" + "\n"
-                                + "PSI Level is: " + PSI + "\n"
-                                + "Admission Status: In-patient(Check for Sepsis)");
+                + "Risk: HIGH" + "\n"
+                + "PSI Level is: " + PSI + "\n"
+                + "Admission Status: In-patient(Check for Sepsis)");
             }
 
             String file = @"data.csv";
